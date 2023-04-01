@@ -1,6 +1,6 @@
 package linkedList;
 
-//LeetCode  第20题：有效的括号
+//LeetCode  第203题：
 public class Solution {
 
     public ListNode removeElements(ListNode head, int val) {
