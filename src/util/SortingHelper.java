@@ -1,5 +1,6 @@
 package util;
 
+import MergeSort.MergeSort;
 import insertionSort.InsertionSort;
 import selectionSort.SelectionSort;
 
@@ -25,6 +26,8 @@ public class SortingHelper {
             InsertionSort.sort(arr);
         }else if (sortname.equals("InsertionSort2")) {
             InsertionSort.sort2(arr);
+        } else if (sortname.equals("MergeSort")) {
+            MergeSort.sort(arr);
         }
         long endTime = System.nanoTime();
 
