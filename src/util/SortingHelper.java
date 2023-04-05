@@ -2,6 +2,7 @@ package util;
 
 import MergeSort.MergeSort;
 import insertionSort.InsertionSort;
+import quickSort.QuickSort;
 import selectionSort.SelectionSort;
 
 public class SortingHelper {
@@ -36,6 +37,8 @@ public class SortingHelper {
             MergeSort.sort4(arr);
         }else if (sortname.equals("MergeSortBU")) {
             MergeSort.sortBU(arr);
+        } else if (sortname.equals("QuickSort")) {
+            QuickSort.sort(arr);
         }
         long endTime = System.nanoTime();
 
