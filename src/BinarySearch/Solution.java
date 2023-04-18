@@ -26,7 +26,7 @@ class Solution {
     public int search(int[] data, int target) {
         int l = 0, r = data.length;
 
-        //在data[l...r]的范围里寻找target
+        //在data[l...r)的范围里寻找target
         while (l < r) {
             int mid = l + (r - l) / 2;
             if (data[mid] == target) {
@@ -34,9 +34,9 @@ class Solution {
             }
 
             if (data[mid] < target) {
-                l = mid + 1; //target在data[mid+1,r]中
+                l = mid + 1; //继续在data[mid+1,r)中寻找target
             } else {
-                r = mid; //target在data[l,mid]中
+                r = mid; //继续在data[l,mid)中寻找target
             }
         }
 
